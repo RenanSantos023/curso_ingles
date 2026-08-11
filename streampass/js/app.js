@@ -10,7 +10,7 @@ async function enviar() {
     try {
 
         const response = await fetch(
-            "SUA_URL_DO_API_GATEWAY",
+            "https://rp9b96v3ih.execute-api.sa-east-1.amazonaws.com/dev",
             {
                 method: "PUT",
                 headers: {
