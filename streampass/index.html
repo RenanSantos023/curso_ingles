@@ -61,36 +61,21 @@
 </head>
 <body>
 
-<div class="container">
-    <h1>Enviar Link</h1>
+    <div class="container">
+        <h1>Enviar Link</h1>
 
-    <input
-        type="url"
-        id="link"
-        placeholder="Cole seu link aqui">
+        <input
+            type="url"
+            id="link"
+            placeholder="Cole seu link aqui">
 
-    <button onclick="enviar()">
-        Enviar
-    </button>
-</div>
+        <button onclick="enviar()">
+            Enviar
+        </button>
+    </div>
 
-<script>
-function enviar(){
-
-    const link = document.getElementById("link").value.trim();
-
-    if(link === ""){
-        alert("Digite um link.");
-        return;
-    }
-
-    console.log("Link recebido:", link);
-
-    alert("Link enviado:\n\n" + link);
-
-    document.getElementById("link").value = "";
-}
-</script>
+    <!-- Importa o JavaScript -->
+    <script src="js/app.js"></script>
 
 </body>
 </html>
